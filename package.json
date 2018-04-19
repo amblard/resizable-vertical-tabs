@@ -1,0 +1,17 @@
+{
+  "name": "resizable-vertical-tabs",
+  "main": "./lib/resizable-vertical-tabs",
+  "version": "1.0.0",
+  "description": "Display tabs vertically in a resizable panel.",
+  "keywords": [
+    "tab",
+    "vertical"
+  ],
+  "repository": "https://github.com/amblard/resizable-vertical-tabs",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "dependencies": {
+  }
+}
