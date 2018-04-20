@@ -62,24 +62,40 @@
     }
 
     .resizer {
-		cursor: e-resize;
-		position: absolute;
+      cursor: e-resize;
+      position: absolute;
     }
-	.full-height-resizer {
-		width: 2px;
-		height: 100%;
-		background-color: #999999;
-		bottom: 0;
-		right: 0;
-	}
-	.bottom-right-resizer {
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 0 0 15px 15px;
-		border-color: transparent transparent #999999 transparent;
-		bottom: 0;
-		right: 0;
-	}
+    .resizer-full-height {
+      width: 2px;
+      height: 100%;
+      background-color: rgba(51, 51, 51, 0.2);
+      bottom: 0;
+      right: 0;
+    }
+    .resizer-bottom-right {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 15px 15px;
+      border-color: transparent transparent rgba(51, 51, 51, 0.2) transparent;
+      bottom: 0;
+      right: 0;
+    }
+
+
+  }
+
+  .tab-are-on-right {
+    .resizer {
+      &.resizer-full-height {
+        left: 0;
+        right: initial;
+      }
+      &.resizer-bottom-right {
+        left: 0;
+        right: initial;
+        border-width: 0 15px 15px 0px;
+      }
+    }
   }
 }
